@@ -12,6 +12,12 @@ def prPurple(skk): print("\033[95m {}\033[00m" .format(skk))
 def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
 def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
 def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
+# import pyfiglet module
+import pyfiglet
+
+result = pyfiglet.figlet_format("TIC TAC TOE", font = "bulbhead" )
+print(result)
+
 
 
 def play_game(game):

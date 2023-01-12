@@ -1,23 +1,20 @@
 import random
 
 
-def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
-
-
-prYellow = ["7", "8", "9",
-            "4", "5", "6",
-            "1", "2", "1"]
+board = ["-", "-", "-",
+        "-", "-", "-",
+        "-", "-", "-"]
 currentPlayer = "X"
 winner = None
 gameRunning = True
 
 # game board
 def printBoard(board):
-    prYellow(board[0] + " | " + board[1] + " | " + board[2])
-    prYellow("---------")
-    prYellow(board[3] + " | " + board[4] + " | " + board[5])
-    prYellow("---------")
-    prYellow(board[6] + " | " + board[7] + " | " + board[8])
+    print(board[0] + " | " + board[1] + " | " + board[2])
+    print("---------")
+    print(board[3] + " | " + board[4] + " | " + board[5])
+    print("---------")
+    print(board[6] + " | " + board[7] + " | " + board[8])
 
 
 # take player input
