@@ -3,118 +3,54 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
 import random
+from TicTacToeGame import TicTacToeGame
 
 
-board = ["-", "-", "-",
-        "-", "-", "-",
-        "-", "-", "-"]
-currentPlayer = "X"
-winner = None
-gameRunning = True
 
-# game board
-def printBoard(board):
-    print(board[0] + " | " + board[1] + " | " + board[2])
-    print("---------")
-    print(board[3] + " | " + board[4] + " | " + board[5])
-    print("---------")
-    print(board[6] + " | " + board[7] + " | " + board[8])
-
-
-# take player input
-def playerInput(board):
-    inp = int(input("Select a spot 1-9: "))
-    if board[inp-1] == "-":
-        board[inp-1] = currentPlayer
-    else:
-        print("Oops player is already at that spot.")
+def play_game(game):
+        """
+        Start a tic-tac-toe game
+        """
+        while game.gameRunning:
+            game.printboard()
+            game.playerinput()
+            game.checkifwin()
+            game.checkiftie()
+            game.switchplayer()
+            game.computer()
+            game.checkifwin()
+            game.checkiftie()
 
 
-# check for win or tie
-def checkHorizontle(board):
-    global winner
-    if board[0] == board[1] == board[2] and board[0] != "-":
-        winner = board[0]
-        return True
-    elif board[3] == board[4] == board[5] and board[3] != "-":
-        winner = board[3]
-        return True
-    elif board[6] == board[7] == board[8] and board[6] != "-":
-        winner = board[6]
-        return True
 
-def checkRow(board):
-    global winner
-    if board[0] == board[3] == board[6] and board[0] != "-":
-        winner = board[0]
-        return True
-    elif board[1] == board[4] == board[7] and board[1] != "-":
-        winner = board[1]
-        return True
-    elif board[2] == board[5] == board[8] and board[2] != "-":
-        winner = board[3]
-        return True
+def main():
+        """"
+        MAIN MENU FUNCTION
+        """
+        print("Welcome to Tic-Tac-Toe!")
+        while True:
+            username = input("please enter a username: \n")
+            if len(username.strip()) == 0:
+                print("Invalid username")
+                continue
+            else:
+                break
+        print(f"Hello {username}!")
 
-
-def checkDiag(board):
-    global winner
-    if board[0] == board[4] == board[8] and board[0] != "-":
-        winner = board[0]
-        return True
-    elif board[2] == board[4] == board[6] and board[4] != "-":
-        winner = board[2]
-        return True
+        while True:
+            to_play = input("Do you wuant to play a game? \n 1 = Yes\n 2 = No\n").strip().lower()
+            if to_play == '2':
+                print(f"Thanks for play {username}, goodbye!")
+            elif to_play == '1':
+                game = TicTacToeGame(username)
+                play_game(game)
+            else:
+                print("You need to enter a valid entry.")
+                continue
 
 
-def checkIfWin(board):
-    global gameRunning
-    if checkHorizontle(board):
-        printBoard(board)
-        print(f"The winner is {winner}!")
-        gameRunning = False
-
-    elif checkRow(board):
-        printBoard(board)
-        print(f"The winner is {winner}!")
-        gameRunning = False
-
-    elif checkDiag(board):
-        printBoard(board)
-        print(f"The winner is {winner}!")
-        gameRunning = False
+main()
 
 
-def checkIfTie(board):
-    global gameRunning
-    if "-" not in board:
-        printBoard(board)
-        print("It is a tie!")
-        gameRunning = False
-
-
-# switch player
-def switchPlayer():
-    global currentPlayer
-    if currentPlayer == "X":
-        currentPlayer = "O"
-    else:
-        currentPlayer = "X"
-
-
-def computer(board):
-    while currentPlayer == "O":
-        position = random.randint(0, 8)
-        if board[position] == "-":
-            board[position] = "O"
-            switchPlayer()
-
-
-while gameRunning:
-    printBoard(board)
-    playerInput(board)
-    checkIfWin(board)
-    checkIfTie(board)
-    switchPlayer()
-    computer(board)
-    checkIfWin(board)
-    checkIfTie(board)
+if __name__ == '__main__':
+    print("Hello")
