@@ -4,7 +4,14 @@
 
 import random
 from TicTacToeGame import TicTacToeGame
-
+def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
+def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
+def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
+def prLightPurple(skk): print("\033[94m {}\033[00m" .format(skk))
+def prPurple(skk): print("\033[95m {}\033[00m" .format(skk))
+def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
+def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
+def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 
 
 def play_game(game):
@@ -27,25 +34,26 @@ def main():
         """"
         MAIN MENU FUNCTION
         """
-        print("Welcome to Tic-Tac-Toe!")
+        
+        prYellow("Welcome to Tic-Tac-Toe!")
         while True:
             username = input("please enter a username: \n")
             if len(username.strip()) == 0:
-                print("Invalid username")
+                prRed("Invalid username")
                 continue
             else:
                 break
-        print(f"Hello {username}!")
+        prGreen(f"Hello {username}!")
 
         while True:
             to_play = input("Do you want to play a game? \n 1 = Yes\n 2 = No\n").strip().lower()
             if to_play == '2':
-                print(f"Thanks for play {username}, goodbye!")
+                prCyan(f"Thanks for play {username}, goodbye!")
             elif to_play == '1':
                 game = TicTacToeGame(username)
                 play_game(game)
             else:
-                print("You need to enter a valid entry.")
+                prRed("You need to enter a valid entry.")
                 continue
 
 
