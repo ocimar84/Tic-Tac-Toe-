@@ -38,7 +38,7 @@ def main():
         print(f"Hello {username}!")
 
         while True:
-            to_play = input("Do you wuant to play a game? \n 1 = Yes\n 2 = No\n").strip().lower()
+            to_play = input("Do you want to play a game? \n 1 = Yes\n 2 = No\n").strip().lower()
             if to_play == '2':
                 print(f"Thanks for play {username}, goodbye!")
             elif to_play == '1':
