@@ -1,4 +1,36 @@
 import random
+import gspread
+from google.oauth2.service_account import Credentials
+def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
+
+
+def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
+
+
+def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
+
+
+def prLightPurple(skk): print("\033[94m {}\033[00m" .format(skk))
+
+
+def prPurple(skk): print("\033[95m {}\033[00m" .format(skk))
+
+
+def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
+
+
+def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
+
+
+def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
+
+
+prCyan("Hello World, ")
+prYellow("It's")
+prGreen("Geeks")
+prRed("For")
+prGreen("Geeks")
+
 
 
 class TicTacToeGame():
@@ -18,12 +50,21 @@ class TicTacToeGame():
         """
         Prints the game board
         """
-        print(self.board[0] + " | " + self.board[1] + " | " + self.board[2])
-        print("----------")
-        print(self.board[3] + " | " + self.board[4] + " | " + self.board[5])
-        print("----------")
-        print(self.board[6] + " | " + self.board[7] + " | " + self.board[8])
+        prYellow(self.board[0] + " | " + self.board[1] + " | " + self.board[2])
+        prYellow("----------")
+        prYellow(self.board[3] + " | " + self.board[4] + " | " + self.board[5])
+        prYellow("----------")
+        prYellow(self.board[6] + " | " + self.board[7] + " | " + self.board[8])
 
+    def getboard(self):
+        """
+        Get value of board
+        """
+        lista = "[ \n"+ self.board[0] +","+ self.board[1] +","+ self.board[2]+","+"\n"+ self.board[3] +","+self.board[4]+","+ self.board[5]+","+"\n"+ self.board[6] +","+ self.board[7] +","+ self.board[8]+","+"\n ]"
+        value = [self.username,self.currentPlayer,lista, self.winner]
+        return value
+
+    
     def playerinput(self):
         """"
         Gathers user input
@@ -33,7 +74,7 @@ class TicTacToeGame():
         if self.board[inp - 1] == "-":
             self.board[inp-1] = self.currentPlayer
         else:
-            print("Oops player is already at that spot.")
+            prRed("Oops player is already at that spot.")
             self.playerinput()
 
     def checkhorizontle(self):

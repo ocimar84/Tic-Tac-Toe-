@@ -40,6 +40,15 @@ result = pyfiglet.figlet_format("TIC TAC TOE", font = "bulbhead" )
 print(result)
 
 
+def update_worksheet(data, worksheet):
+    """
+    Receives a list of integers to be inserted into a worksheet
+    Update the relevant worksheet with the data provided
+    """
+    print(f"Updating {worksheet} worksheet...\n")
+    worksheet_to_update = SHEET.worksheet(worksheet)
+    worksheet_to_update.append_row(data)
+    print(f"{worksheet} worksheet updated successfully\n")
 
 def play_game(game):
         """
@@ -54,6 +63,9 @@ def play_game(game):
             game.computer()
             game.checkifwin()
             game.checkiftie()
+            if(game.gameRunning == False):
+                update_worksheet(game.getboard(),'games_played')
+
 
 
 
