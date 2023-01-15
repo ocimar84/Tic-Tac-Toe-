@@ -102,6 +102,7 @@ class TicTacToeGame():
             self.printboard()
             print("It is a tie!")
             self.gameRunning = False
+            exit()
 
     def switchplayer(self):
         """
@@ -123,3 +124,24 @@ class TicTacToeGame():
                 self.board[position] = "0"
                 self.switchplayer()
 
+    def available_moves_display(self):
+        moves = []
+        for (i, spot) in enumerate(self.board):
+            if spot == ' ':
+                moves.append(str(i))
+            else:
+                moves.append(' ')
+        return moves
+
+    def available_moves(self):
+        moves = []
+        for (i, spot) in enumerate(self.board):
+            if spot == ' ':
+                moves.append(i)
+        return moves
+
+    def empty_squares(self):
+        return ' ' in self.board
+
+    def num_empty_squares(self):
+        return self.board.count(' ')

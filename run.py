@@ -4,6 +4,12 @@
 
 import random
 from TicTacToeGame import TicTacToeGame
+# import pyfiglet module
+import pyfiglet
+from colorama import Fore, Back, Style
+print(Style.RESET_ALL)
+print('back to normal now')
+
 def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
 def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
 def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
@@ -12,8 +18,8 @@ def prPurple(skk): print("\033[95m {}\033[00m" .format(skk))
 def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
 def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
 def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
-# import pyfiglet module
-import pyfiglet
+
+
 
 result = pyfiglet.figlet_format("TIC TAC TOE", font = "bulbhead" )
 print(result)
@@ -41,7 +47,7 @@ def main():
         MAIN MENU FUNCTION
         """
         
-        prYellow("Welcome to Tic-Tac-Toe!")
+        print(Back.GREEN + "Welcome to Tic-Tac-Toe!")
         while True:
             username = input("please enter a username: \n")
             if len(username.strip()) == 0:
@@ -55,11 +61,12 @@ def main():
             to_play = input("Do you want to play a game? \n 1 = Yes\n 2 = No\n").strip().lower()
             if to_play == '2':
                 prCyan(f"Thanks for play {username}, goodbye!")
+                exit()
             elif to_play == '1':
                 game = TicTacToeGame(username)
                 play_game(game)
             else:
-                prRed("You need to enter a valid entry.")
+                print(Fore.RED +"You need to enter a valid entry.")
                 continue
 
 
