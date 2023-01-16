@@ -25,14 +25,6 @@ def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
 def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 
 
-prCyan("Hello World, ")
-prYellow("It's")
-prGreen("Geeks")
-prRed("For")
-prGreen("Geeks")
-
-
-
 class TicTacToeGame():
 
     def __init__(self, username):

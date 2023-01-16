@@ -2,7 +2,14 @@
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 import gspread
+import random
+# import pyfiglet module
+import pyfiglet
 from google.oauth2.service_account import Credentials
+from colorama import Fore, Back, Style
+from TicTacToeGame import TicTacToeGame
+
+
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -17,13 +24,7 @@ SHEET = GSPREAD_CLIENT.open('ocimars_tic_tac_toe')
 
 
 
-import random
-from TicTacToeGame import TicTacToeGame
-# import pyfiglet module
-import pyfiglet
-from colorama import Fore, Back, Style
 print(Style.RESET_ALL)
-print('back to normal now')
 
 def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
 def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
