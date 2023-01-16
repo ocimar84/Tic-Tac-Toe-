@@ -52,11 +52,14 @@ class TicTacToeGame():
         """
         Get value of board
         """
-        lista = "[ \n"+ self.board[0] +","+ self.board[1] +","+ self.board[2]+","+"\n"+ self.board[3] +","+self.board[4]+","+ self.board[5]+","+"\n"+ self.board[6] +","+ self.board[7] +","+ self.board[8]+","+"\n ]"
-        value = [self.username,self.currentPlayer,lista, self.winner]
+        lista = "[ \n" + self.board[0] + "," + self.board[1] \
+            + "," + self.board[2] + "," + "\n" + self.board[3] \
+            + "," + self.board[4] + "," + self.board[5] \
+            + "," + "\n" + self.board[6] + "," + self.board[7] \
+            + "," + self.board[8] + "," + "\n ]"
+        value = [self.username, self.currentPlayer, lista, self.winner]
         return value
 
-    
     def playerinput(self):
         """"
         Gathers user input
@@ -73,13 +76,16 @@ class TicTacToeGame():
         """
         Check for horizontal winner
         """
-        if self.board[0] == self.board[1] == self.board[2] and self.board[0] != "-":
+        if self.board[0] == self.board[1] == self.board[2] \
+                and self.board[0] != "-":
             self.winner = self.board[0]
             return True
-        elif self.board[3] == self.board[4] == self.board[5] and self.board[3] != "-":
+        elif self.board[3] == self.board[4] == self.board[5] \
+                and self.board[3] != "-":
             self.winner = self.board[3]
             return True
-        elif self.board[6] == self.board[7] == self.board[8] and self.board[6] != "-":
+        elif self.board[6] == self.board[7] == self.board[8] \
+                and self.board[6] != "-":
             self.winner = self.board[6]
             return True
 
@@ -87,13 +93,16 @@ class TicTacToeGame():
         """
         Check for vertical winner
         """
-        if self.board[0] == self.board[3] == self.board[6] and self.board[0] != "-":
+        if self.board[0] == self.board[3] == self.board[6] \
+                and self.board[0] != "-":
             self.winner = self.board[0]
             return True
-        elif self.board[1] == self.board[4] == self.board[7] and self.board[1] != "-":
+        elif self.board[1] == self.board[4] == self.board[7] \
+                and self.board[1] != "-":
             self.winner = self.board[1]
             return True
-        elif self.board[2] == self.board[5] == self.board[8] and self.board[2] != "-":
+        elif self.board[2] == self.board[5] == self.board[8] \
+                and self.board[2] != "-":
             self.winner = self.board[2]
             return True
 
@@ -101,10 +110,12 @@ class TicTacToeGame():
         """
         Check for vertical winner
         """
-        if self.board[0] == self.board[4] == self.board[8] and self.board[0] != "-":
+        if self.board[0] == self.board[4] == self.board[8] \
+                and self.board[0] != "-":
             self.winner = self.board[0]
             return True
-        elif self.board[2] == self.board[4] == self.board[6] and self.board[4] != "-":
+        elif self.board[2] == self.board[4] == self.board[6] \
+                and self.board[4] != "-":
             self.winner = self.board[2]
             return True
 
@@ -152,7 +163,7 @@ class TicTacToeGame():
         (computer is always 0)
         """
         while self.currentPlayer == "0":
-            position = random.randint(0,8)
+            position = random.randint(0, 8)
             if self.board[position] == "-":
                 self.board[position] = "0"
                 self.switchplayer()
