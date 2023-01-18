@@ -47,7 +47,7 @@ Markdown's not all that easy so sometimes you may want to use some tools to make
 Copy your readme to https://luciopaiva.com/markdown-toc/ to make a table of contents.  This will help assessors to see the structure of your readme. Just test it out ast this tool isn't perfect. It tends to mess up with special characters like dashes.
 
 
-- [PROJECT NAME](#project-name)
+- [Tic Tac Toe](#TicTacToe)
   - [Live Site](#live-site)
   - [Repository](#repository)
   - [Author](#author)
@@ -80,9 +80,12 @@ Copy your readme to https://luciopaiva.com/markdown-toc/ to make a table of cont
 
 ====================================== The Sections you Fill in are below ==============================
 
-# PROJECT NAME
-🚨**Required** 
-*replace the **PROJECT NAME** header with your project's name*
+# TicTacToe
+
+! [game_logo] ()
+
+- This app was developed as part of my third Portfolio project with the Code Institute. It is a Tic Tac Toe game developed with Python as its only language and is a Player vs Computer style game that are chosen by the user. The user can then play against a computer that chooses its moves at random, or a computer that maximizes its wins while minimizing its losses. In the end I incorporated the google cloud spreadsheet to show the result of all matches.
+
 - Include a screenshot or gif of your terminal running in heroku
 - One or two paragraphs providing an overview of your project.
 - Write this as a sales pitch or commercial to entice users to interact with your site or how you want investors to purchase your website.
