@@ -101,11 +101,11 @@ https://user-images.githubusercontent.com/79640465/213295225-8ea841c3-7e41-4d6f-
 ## Repository
 🚨**Required** 
 
-- Include a Link to the GitHub repository
+- [Include a Link to the GitHub repository](https://github.com/ocimar84/Tic-Tac-Toe-)
 ## Author
 🚨**Required** 
 
-DEVELOPER_NAME (take credit for the work you do!)
+Ocimar_Felipe
 
 ## Table of Contents
 🚀 **merit & beyond**
