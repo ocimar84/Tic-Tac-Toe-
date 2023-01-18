@@ -81,15 +81,18 @@ Copy your readme to https://luciopaiva.com/markdown-toc/ to make a table of cont
 ====================================== The Sections you Fill in are below ==============================
 
 # TicTacToe
+![logo](https://user-images.githubusercontent.com/79640465/213293983-f2800deb-8666-4b7b-83f2-0208be2e245c.png)
 
 ! [game_logo] ()
 
 - This app was developed as part of my third Portfolio project with the Code Institute. It is a Tic Tac Toe game developed with Python as its only language and is a Player vs Computer style game that are chosen by the user. The user can then play against a computer that chooses its moves at random, or a computer that maximizes its wins while minimizing its losses. In the end I incorporated the google cloud spreadsheet to show the result of all matches.
 
-- Include a screenshot or gif of your terminal running in heroku
-- One or two paragraphs providing an overview of your project.
-- Write this as a sales pitch or commercial to entice users to interact with your site or how you want investors to purchase your website.
 
+
+https://user-images.githubusercontent.com/79640465/213295225-8ea841c3-7e41-4d6f-a88d-741eeb8306a7.mov
+
+
+model
 **To create a gif**:
 1. take a video of your program using slack in a message to yourself
 2. download the video
