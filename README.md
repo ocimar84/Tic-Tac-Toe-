@@ -83,10 +83,6 @@ Copy your readme to https://luciopaiva.com/markdown-toc/ to make a table of cont
 # TicTacToe
 ![logo](https://user-images.githubusercontent.com/79640465/213293983-f2800deb-8666-4b7b-83f2-0208be2e245c.png)
 
-! [game_logo] ()
-
-
-
 
 https://user-images.githubusercontent.com/79640465/213295225-8ea841c3-7e41-4d6f-a88d-741eeb8306a7.mov
 
@@ -96,12 +92,13 @@ https://user-images.githubusercontent.com/79640465/213295225-8ea841c3-7e41-4d6f-
 ## Live Site
 🚨**Required** 
 
-[- Include a link to deployed project (typically a herokuapp url )](https://tic-tac-toe1.herokuapp.com/)
+[TicTacToe](https://tic-tac-toe1.herokuapp.com/)
 
 ## Repository
 🚨**Required** 
 
-- [Include a Link to the GitHub repository](https://github.com/ocimar84/Tic-Tac-Toe-)
+- [ocimar84/Tic-Tac-Toe-](https://github.com/ocimar84/Tic-Tac-Toe-)
+
 ## Author
 🚨**Required** 
 
