@@ -85,25 +85,18 @@ Copy your readme to https://luciopaiva.com/markdown-toc/ to make a table of cont
 
 ! [game_logo] ()
 
-- This app was developed as part of my third Portfolio project with the Code Institute. It is a Tic Tac Toe game developed with Python as its only language and is a Player vs Computer style game that are chosen by the user. The user can then play against a computer that chooses its moves at random, or a computer that maximizes its wins while minimizing its losses. In the end I incorporated the google cloud spreadsheet to show the result of all matches.
 
 
 
 https://user-images.githubusercontent.com/79640465/213295225-8ea841c3-7e41-4d6f-a88d-741eeb8306a7.mov
 
+- This app was developed as part of my third Portfolio project with the Code Institute. It is a Tic Tac Toe game developed with Python as its only language and is a Player vs Computer style game that are chosen by the user. The user can then play against a computer that chooses its moves at random, or a computer that maximizes its wins while minimizing its losses. In the end I incorporated the google cloud spreadsheet to show the result of all matches.
 
-model
-**To create a gif**:
-1. take a video of your program using slack in a message to yourself
-2. download the video
-3. upload it to https://convertio.co/mp4-gif/
-4. download the gif
-5. copy the file and paste it into your readme like you do with screenshots
 
 ## Live Site
 🚨**Required** 
 
-- Include a link to deployed project (typically a herokuapp url )
+[- Include a link to deployed project (typically a herokuapp url )](https://tic-tac-toe1.herokuapp.com/)
 
 ## Repository
 🚨**Required** 
