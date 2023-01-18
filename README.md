@@ -86,21 +86,21 @@ Copy your readme to https://luciopaiva.com/markdown-toc/ to make a table of cont
 
 https://user-images.githubusercontent.com/79640465/213295225-8ea841c3-7e41-4d6f-a88d-741eeb8306a7.mov
 
-- This app was developed as part of my third Portfolio project with the Code Institute. It is a Tic Tac Toe game developed with Python as its only language and is a Player vs Computer style game that are chosen by the user. The user can then play against a computer that chooses its moves at random, or a computer that maximizes its wins while minimizing its losses. In the end I incorporated the google cloud spreadsheet to show the result of all matches.
+
 
 
 ## Live Site
-🚨**Required** 
+
 
 [TicTacToe](https://tic-tac-toe1.herokuapp.com/)
 
 ## Repository
-🚨**Required** 
+
 
 - [ocimar84/Tic-Tac-Toe-](https://github.com/ocimar84/Tic-Tac-Toe-)
 
 ## Author
-🚨**Required** 
+
 
 Ocimar_Felipe
 
@@ -112,11 +112,11 @@ Generate after readme is complete by copying and pasting your readme from this p
 **NOTE:** It does have some bugs if you have dashes or trailing spaces in your headers
 
 ## How To Play/Use
-🚨**Required** 
 
-Paragraph or bullet points of how the user initiates the program and interfaces with it. You could have videos of each bit if you want and direct what the user should do.
 
-you can have a gif here too if you want.
+- This app was developed as part of my third Portfolio project with the Code Institute. It is a Tic Tac Toe game developed with Python as its only language and is a Player vs Computer style game that are chosen by the user. The user can then play against a computer that chooses its moves at random, or a computer that maximizes its wins while minimizing its losses. In the end I incorporated the google cloud spreadsheet to show the result of all matches.
+
+
 
 ## Features
 🚨**Required** 
