@@ -176,16 +176,16 @@ Use this section to itemize the features of your project.
 
 
 ## Flow Chart
-🚀 **merit & beyond**
 
-- Flow Code
+
+- Flow Code chart.
 
 <img width="988" alt="Chart code" src="https://user-images.githubusercontent.com/79640465/213575130-23859527-a858-4b29-9d4b-4916400d327b.png">
 
+- Flow Game Chart.
 
-This section is where you would share logic diagrams and spreadsheets that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in a separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser. 
+<img width="963" alt="Game flow chart" src="https://user-images.githubusercontent.com/79640465/213576002-bea09677-ea13-4a7b-b7de-894af70e6888.png">
 
-The flowchart can be as simple as a picture of a drawing of how you envisioned laying out the logic for you project, or done with a professional tool such as powerpoint, googlesheets, or [https://app.diagrams.net/](https://app.diagrams.net/) They are a roadmap and do not have to be 100% accurate of the final product.
 
 ## Data Model/ Classes
 🚨**Required** 
