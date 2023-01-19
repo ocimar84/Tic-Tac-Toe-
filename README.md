@@ -122,6 +122,16 @@ Generate after readme is complete by copying and pasting your readme from this p
 
 https://user-images.githubusercontent.com/79640465/213564110-03f03512-5d17-4412-8e79-e752ac001e09.mov
 
+
+
+
+## Features
+
+
+Use this section to itemize the features of your project. 
+
+[Below is a brief presentation of how the game works and the integration with Google Spreadsheet Cloud.](https://user-images.githubusercontent.com/79640465/213560562-1e46ee48-1b08-4509-a542-384bfe9ac287.mov)
+
 1 - Logo of the game.
 
 ![Logo Tic Tac Toe](https://user-images.githubusercontent.com/79640465/213565871-863ca4ff-90c8-4698-8676-b3e4b1c5347e.png)
@@ -149,14 +159,6 @@ https://user-images.githubusercontent.com/79640465/213564110-03f03512-5d17-4412-
         1 - Yes / 2 - No
 
 ![one more time](https://user-images.githubusercontent.com/79640465/213567481-d33e6301-1075-49f3-80f8-7f10b1503189.png)
-
-
-## Features
-🚨**Required** 
-
-Use this section to itemize the features of your project. 
-
-[Below is a brief presentation of how the game works and the integration with Google Spreadsheet Cloud.](https://user-images.githubusercontent.com/79640465/213560562-1e46ee48-1b08-4509-a542-384bfe9ac287.mov)
 
 It's easiest to break this section down into piece parts or core functionality blocks such as data upload, user input, analysis and data output; focusing on the atomic functions and data model(s) or classes you created to make the program work. 
 
