@@ -132,6 +132,11 @@ Use this section to itemize the features of your project.
 
 [Below is a brief presentation of how the game works and the integration with Google Spreadsheet Cloud.](https://user-images.githubusercontent.com/79640465/213560562-1e46ee48-1b08-4509-a542-384bfe9ac287.mov)
 
+
+
+### Implemented Features
+
+
 1 - Logo of the game.
 
 ![Logo Tic Tac Toe](https://user-images.githubusercontent.com/79640465/213565871-863ca4ff-90c8-4698-8676-b3e4b1c5347e.png)
@@ -161,11 +166,6 @@ Use this section to itemize the features of your project.
 ![one more time](https://user-images.githubusercontent.com/79640465/213567481-d33e6301-1075-49f3-80f8-7f10b1503189.png)
 
 
-### Implemented Features
-🚨**Required** 
-
-In each subsection, write out what the feature is for and what value it adds. If there is terminal interaction or output associated with the function, include a screenshot/gif.
-
 
 ### Future Features
 
@@ -177,6 +177,11 @@ In each subsection, write out what the feature is for and what value it adds. If
 
 ## Flow Chart
 🚀 **merit & beyond**
+
+- Flow Code
+
+<img width="988" alt="Chart code" src="https://user-images.githubusercontent.com/79640465/213575130-23859527-a858-4b29-9d4b-4916400d327b.png">
+
 
 This section is where you would share logic diagrams and spreadsheets that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in a separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser. 
 
