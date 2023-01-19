@@ -160,8 +160,6 @@ Use this section to itemize the features of your project.
 
 ![one more time](https://user-images.githubusercontent.com/79640465/213567481-d33e6301-1075-49f3-80f8-7f10b1503189.png)
 
-It's easiest to break this section down into piece parts or core functionality blocks such as data upload, user input, analysis and data output; focusing on the atomic functions and data model(s) or classes you created to make the program work. 
-
 
 ### Implemented Features
 🚨**Required** 
@@ -170,11 +168,11 @@ In each subsection, write out what the feature is for and what value it adds. If
 
 
 ### Future Features
-🚀 **merit & beyond**
 
-Use this section to discuss plans for additional features to be implemented in the future:
+- Use more colorama features.
+- Vary tic tac toe layout.
+- To give the user the option to choose which tag to start with.
 
-If you end up not developing some features you hoped to implement, you can include those in this section.
 
 
 ## Flow Chart
