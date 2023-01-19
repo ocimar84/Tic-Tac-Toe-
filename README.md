@@ -116,6 +116,39 @@ Generate after readme is complete by copying and pasting your readme from this p
 
 - This app was developed as part of my third Portfolio project with the Code Institute. It is a Tic Tac Toe game developed with Python as its only language and is a Player vs Computer style game that are chosen by the user. The user can then play against a computer that chooses its moves at random, or a computer that maximizes its wins while minimizing its losses. In the end I incorporated the google cloud spreadsheet to show the result of all matches.
 
+- The explanatory video of how the system works:
+
+
+
+https://user-images.githubusercontent.com/79640465/213564110-03f03512-5d17-4412-8e79-e752ac001e09.mov
+
+1 - Logo of the game.
+
+![Logo Tic Tac Toe](https://user-images.githubusercontent.com/79640465/213565871-863ca4ff-90c8-4698-8676-b3e4b1c5347e.png)
+
+2 - Put the name of the player.
+
+![Player Name](https://user-images.githubusercontent.com/79640465/213566286-9b8ce3b3-696e-455b-b478-6ee5eeab2d3c.png)
+
+3 - Machine asks if you want to play?
+
+        1 - Yes / 2 - No
+
+![Do you want to play a game?](https://user-images.githubusercontent.com/79640465/213566672-9441038a-3472-484d-8ebf-70d1635796fa.png)
+
+4 - Player selects houses using the numerical keyboard from 1 to 9.
+
+![Tictactoe](https://user-images.githubusercontent.com/79640465/213566994-d8eb30f1-3c0c-45be-aab9-b66517248923.png)
+
+5 - End the game notifies who was the winner, and it shows that the result is being sent to google cloud spreadsheet.
+
+![winner](https://user-images.githubusercontent.com/79640465/213567172-1ed10f82-cd6f-4e66-8902-87abda532f4f.png)
+
+6 - Ask if you want to play one more time.
+
+        1 - Yes / 2 - No
+
+![one more time](https://user-images.githubusercontent.com/79640465/213567481-d33e6301-1075-49f3-80f8-7f10b1503189.png)
 
 
 ## Features
@@ -123,7 +156,7 @@ Generate after readme is complete by copying and pasting your readme from this p
 
 Use this section to itemize the features of your project. 
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+[Below is a brief presentation of how the game works and the integration with Google Spreadsheet Cloud.](https://user-images.githubusercontent.com/79640465/213560562-1e46ee48-1b08-4509-a542-384bfe9ac287.mov)
 
 It's easiest to break this section down into piece parts or core functionality blocks such as data upload, user input, analysis and data output; focusing on the atomic functions and data model(s) or classes you created to make the program work. 
 
