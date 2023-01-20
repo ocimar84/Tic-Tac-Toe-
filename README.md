@@ -212,9 +212,6 @@ Note any errors or warnings you are ignoring and why.
 
 - You will find my manual testing sheet [here](https://docs.google.com/spreadsheets/d/123dAl30RBw5Sq-1GjS7DWu6I563MDM4ZSPRLnatv-ss/edit#gid=0)
 
-### Defect Tracking
-
-- You will find my defect tracking sheet [here](https://docs.google.com/spreadsheets/d/1xYKKoZuA54QKtIxZ2fA6-BUdHOFavs1R6JX9CK3YZQM/edit?usp=sharing).
 
 ### Defect Tracking
 
