@@ -382,58 +382,29 @@ pip3 install -r requirements.txt
 ```
 
 ### Heroku
-🚨**Required** 
 
-This section should describe the process you went through to deploy the project to Heroku. Include screenshots if you think they would make the process easier.
+- Head to [Heroku](https://heroku.com) and create an account.
+- Click on "Create New App".
+- Name your app, select your region and click on "Create app".
 
-You may want to re-watch the [python essentials deployment video](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/e3b664e16366444c8d722c5d8340b340/?child=first) when writing up this section.
+![App Information](https://user-images.githubusercontent.com/79640465/213801784-d297000c-6d93-4f8a-bc7b-15663bec15cd.png)
 
+![ocimar84:Tic-Tac-Toe-](https://user-images.githubusercontent.com/79640465/213802257-4401e55e-2f58-4da3-99a5-18e8031ffbe2.png)
 
-If you have project settings required for Heroku, provide a table of the keys and values.
-Do not share your personal keys but either cut them out of the screen shot or say <YOUR_VALUE> and include links on how the user would obtain such values.
+![Config Vars](https://user-images.githubusercontent.com/79640465/213802674-4a9c47d4-4d03-4512-a685-d463877c6d6f.png)
 
-1. Fork the repository
+![B  Build Packs](https://user-images.githubusercontent.com/79640465/213802748-13b8e36b-82d9-4e9d-81e4-104420d62991.png)
 
-Make a fork so you have a copy of the repository in your own git hub account: https://github.com/maliahavlicek/portfolio_project_03
+![Deploy A](https://user-images.githubusercontent.com/79640465/213803017-700897f4-ac90-4c85-a7f4-9b4aabeef4c2.png)
 
-![image](https://user-images.githubusercontent.com/23039742/132136504-eb79a6f3-0205-4c82-80c2-eef136ec7e4c.png)
+![B  Build Packs](https://user-images.githubusercontent.com/79640465/213803042-ec7a32d6-28ba-4484-9593-2729434c3800.png)
 
-
-2.  New Project
-Log into Heroku and create a new project. Name it something like XXX_coders_bistro.
-
-
-3.  Settings
-On the settings tab you have to address two things:
-A. **Config Vars**
-
-  ![image](https://user-images.githubusercontent.com/23039742/132135869-215d2e0f-805d-40a8-a8c2-fb1098e2645d.png)
-
-  At a bar minimum you should show the user that they need to add the PORT. 8000 key value pair.
-
-
-B. **Build Packs**
-
-  ![image](https://user-images.githubusercontent.com/23039742/132135918-28cac112-7766-4277-905c-4a4963d8442d.png)
-
-  add Python Then Node.js
-
-
-4. Deploy
-A. Set up to github and select the correct repository:
-
-  ![image](https://user-images.githubusercontent.com/23039742/132136113-c257c921-d10c-4ccc-af09-6a1d25136395.png)
-
-B. Deploy either manual or automatic
-
-![image](https://user-images.githubusercontent.com/23039742/132136241-9d76fabb-39f0-4696-bc5f-047398fdaf41.png) 
+![Deploy either manual or automatic](https://user-images.githubusercontent.com/79640465/213803054-eab55616-ab4c-4dfc-9707-9eb41fe436b3.png)
 
 
 
 ## Credits
-🚨**Required** 
 
-To avoid plagiarism amd copyright infringement, you should mention any other projects, stackoverflow, videos, blogs, etc that you used to gather imagery or ideas for your code even if you used it as a starting point and modified things. Giving credit to other people's efforts and ideas that saved you time acknowledges the hard work others did. 
 
 -[Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
     - The Template for the GUI for this project was provided by Code Institute. This allows for the Command line to be shown and used within the browser.
@@ -441,7 +412,16 @@ To avoid plagiarism amd copyright infringement, you should mention any other pro
 ### Content
 🚨**Required** 
 
-Use bullet points to list out sites you copied text from and cross-reference where those show up on your site
+[Use bullet points to list out sites you copied text from and cross-reference where those show up on your site](https://www.geeksforgeeks.org/print-colors-python-terminal/)
+
+[https://realpython.com/documenting-python-code/]
+(https://realpython.com/documenting-python-code/)
+
+https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
+
+https://www.scraggo.com/python-classes-guess-the-number/
+
+https://www.geeksforgeeks.org/print-colors-python-terminal/
 
 ### Media
 🚨**Required** 
@@ -449,9 +429,10 @@ Use bullet points to list out sites you copied text from and cross-reference whe
 Make a list of sites you used images from. If you used several sites try to match up each image to the correct site. This includes attribution for icons if they came from font awesome or other sites, give them credit.
 
 ### Acknowledgments
-🚨**Required** 
 
-This is the section where you refer to code examples, mentors, blogs, stack overflow answers and videos that helped you accomplish your end project. Even if it's an idea that you updated you should note the site and why it was important to your completed project.
+I would like to thank all the knowledge that was acquired and make a comment, I had a lot of difficulty in finishing this project, I found the classes confusing, I had to look for another type of help to understand. I had a serious problem on my machine where once again github was not pushing.
 
-If you used a CodeInstitute Instructional project as a starting point. Make note of that here too.
+I would like to thank my mentor Malia who was very patient in explaining things to me more clearly.
+
+Andre Maurilho helped me configure my computer so that github would work, and even uploaded a file that was stuck in my repository.
 
