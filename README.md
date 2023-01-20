@@ -189,24 +189,6 @@ Use this section to itemize the features of your project.
 ### Validation Testing
 🚨**Required** 
 
-You should try to ensure you code is valid and follows proper indentation.  In this section you should write up any websites you used to validate your code. As your projects becomes more complex these tools may change.
-
-For each python file in your project, paste it into [CI's pep8 tool](https://pep8ci.herokuapp.com/), and take a screenshot of the linter output showing NO ERRORS
-
-![image](https://user-images.githubusercontent.com/23039742/212106175-36b2f18a-7c75-458d-94dd-9886e81c71f3.png)
-
-Ideally you would have no errors remaining outside of line too long which you can fix by 
-
-adding
-```$python 
-# noqa
-```
-There is a space before the # and after it to skip the quality assurance for that line.
-
-Note any errors or warnings you are ignoring and why.
-
-### Manual Testing
-
 
 ### Manual Testing
 
