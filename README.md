@@ -180,15 +180,14 @@ Use this section to itemize the features of your project.
 
 ## Testing
 
+
+### Validation Testing
+
 ![Code TicTacToe Game ](https://user-images.githubusercontent.com/79640465/213772339-fcf76435-aa51-470a-9c87-ab779ae7a6cc.png)
 
 ![Code TicTacToe](https://user-images.githubusercontent.com/79640465/213772365-5361c014-4701-478b-a291-175716ac6e78.png)
 
 ![Code run](https://user-images.githubusercontent.com/79640465/213772396-52bfb2bf-b23b-4901-9194-ad207c3ee4cf.png)
-
-### Validation Testing
-🚨**Required** 
-
 
 ### Manual Testing
 
@@ -203,17 +202,8 @@ Use this section to itemize the features of your project.
 
 
 ### Outstanding Defects
-🚨**Required** 
 
-It's ok to not resolve all the defects you found as long as:
-- it does not impact a user from completing a vital function on the website
-- it only affects a very small subset of users
-- is an extreme edge case that very few users would try
-- there is an open issue against a framework, browser or technology used
-
-If you know of something that isn't quite right, create an issue and link to it here and explain why you chose not to resolve it. 
-
-Sometimes it's as simple, word wrapping issue that makes the site look odd at a certain screensize that you just didn't have time to fix due to the impending deadline it's best to mention it but note why you allowed it to go live: "Yes it looks odd, but it doesn't impact core functionality of the site." than to let the accessors think you didn't notice it. 
+Nothing to change.
 
 ### Commenting Code
 Documentation worthy example:
