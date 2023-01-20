@@ -188,7 +188,46 @@ Use this section to itemize the features of your project.
 
 
 ## Data Model/ Classes
-🚨**Required** 
+
+
+### Board
+
+- **get_board** Metod get board the game
+
+### BasePlayer
+- Base player is a generic representation of a player.
+
+#### Properties
+- Marks the symbol to be used to represent player X or 0.
+
+#### Methods
+- **available_moves_display** Method to choose a move based on a game board.
+
+### ComputerPlayer
+- Computer player is the computer in the games.
+
+### Player
+- The human player determines his movements using the base player.
+
+### TicTacToe
+- Basically the game TicTacToe
+
+#### Properties
+- **board** an array of 9 entries representing positions.
+- **current_winner** tracks whether a player has won the game or not.
+- **computer** player representing the computer.
+- **player** player that represents the human user.
+
+#### Methods
+- **game.printboard()** Prints out the game board to the terminal.
+- **game.playerinput()** Enter the player's name and ask if he wants to play. (1 - yes / 2 - No).
+- **game.checkifwin()** Places the player tags according to the index provided. If the index is an empty square, return True and make the move. If the index is occupied, return False and invalidate the move.
+- **game.switchplayer()** Change who is playing by switching between the player and the computer.
+- **game.computer()** Computer randomly selects your position on the board.
+- **game.checkifwin()** Places the computer's tags according to the index provided. If the index is an empty square, return True and make the move. If the index is occupied, return False and invalidate the move.
+
+
+
 
 In this section write our your data model(s) or classes. 
 
