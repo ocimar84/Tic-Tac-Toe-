@@ -1,52 +1,3 @@
-# OVERVIEW
-
-This template was made as a guide to ensure you cover assessment criteria in your third milestone write up. It is specific to the **PORTFOLIO 3: Python Essentials** project. It was based off the [battleship readme](https://codeinstitute.s3.amazonaws.com/CSSEssentials/p3-readme.png) with a few additions to help elevate you to possible distinction status.
-
-
-Sections marked as 🚨**Required**  and 🚀 **merit & beyond**
-
-**Please note** that project assessment criteria changes more often than these guides are updated so double-check the submission criteria before assuming the  🚨**Required**  is all you have to do to pass.
-
-## Helpful tools
-
-### Debugging Your run.py in gitpod
-With a single file importing others, gitpod lets you set breakpoints where you then can look at variables and try out syntax.
-
-https://user-images.githubusercontent.com/23039742/212526268-ec02736e-e199-4c63-92b0-96b219f24abc.mp4
-
-
-### Screenshots and Videos
-**Here’s a great video on how to add videos to your readme! no need to convert to gifs!!**
-
-https://www.youtube.com/watch?v=G3Cytlicv8Y
-
-> 1. record a video via slack
-> 2. download it
-> 3. in github, edit your readme via the pencil icon
-> 4. type a place holder word and highlight it
-> 5. drag and drop mp4 file over that text
-> 6. scroll down to the commit area
-> 7. update the default commit message
-> 8. click the green button
-> 9. ```git pull``` changes to your gitpod workspace
-
-**You can do the steps 3-9 for the image/screenshot uploads too!**
-
-### Cheatsheets and Auto Generation Tools
-
-Markdown's not all that easy so sometimes you may want to use some tools to make tables. 
-
-- [Markdown Cheatsheet](https://guides.github.com/features/mastering-markdown/)
-- [markdown table generator](https://www.tablesgenerator.com/markdown_tables) - used to help with documentation table formatting
-- [mardown table of contents generator](https://luciopaiva.com/markdown-toc/) - used to create table of contents (be weary it does have some bugs if you have dashes or trailing spaces in your headers)
-- [readme.so](https://readme.so/) - if you don't want to learn markdown, this tool might help you
-
-# Table of Contents
-🚀 **merit & beyond**
-
-Copy your readme to https://luciopaiva.com/markdown-toc/ to make a table of contents.  This will help assessors to see the structure of your readme. Just test it out ast this tool isn't perfect. It tends to mess up with special characters like dashes.
-
-
 - [Tic Tac Toe](#TicTacToe)
   - [Live Site](#live-site)
   - [Repository](#repository)
@@ -78,7 +29,7 @@ Copy your readme to https://luciopaiva.com/markdown-toc/ to make a table of cont
     
 
 
-====================================== The Sections you Fill in are below ==============================
+
 
 # TicTacToe
 ![logo](https://user-images.githubusercontent.com/79640465/213293983-f2800deb-8666-4b7b-83f2-0208be2e245c.png)
@@ -102,7 +53,7 @@ https://user-images.githubusercontent.com/79640465/213295225-8ea841c3-7e41-4d6f-
 ## Author
 
 
-Ocimar_Felipe
+Ocimar Felipe Costa
 
 ## Table of Contents
 🚀 **merit & beyond**
@@ -293,74 +244,47 @@ If you know of something that isn't quite right, create an issue and link to it 
 Sometimes it's as simple, word wrapping issue that makes the site look odd at a certain screensize that you just didn't have time to fix due to the impending deadline it's best to mention it but note why you allowed it to go live: "Yes it looks odd, but it doesn't impact core functionality of the site." than to let the accessors think you didn't notice it. 
 
 ### Commenting Code
-🚀 **merit & beyond**
-
-Make sure you use triple double quotes to document functions and classes.
- Here'a  documentation worthy example:
+Documentation worthy example:
 ```$python
-def yes_no(question):
-    """
-    Function to ask a simple yes no question of the user.
-    :param question: String displayed as the question
-    :return: answer: String equal to "1" or "2" representing yes or no respectfully
-    """
-    print(question)
-    print("yes = 1")
-    print("no = 2")
-    answer = input("enter your answer here \n").strip()
-    while answer not in ("1", "2"):
-        print("please choose 1 for yes and 2 for no")
-        answer = input("enter your answer here \n").strip()
-    return answer
+def printboard(self):
+        """
+        Prints the game board
+        """
+        prYellow(self.board[0] + " | " + self.board[1] + " | " + self.board[2])
+        prYellow("----------")
+        prYellow(self.board[3] + " | " + self.board[4] + " | " + self.board[5])
+        prYellow("----------")
+        prYellow(self.board[6] + " | " + self.board[7] + " | " + self.board[8])
+
+    def getboard(self):
+        """
+        Get value of board
+        """
+        lista = "[ \n" + self.board[0] + "," + self.board[1] \
+            + "," + self.board[2] + "," + "\n" + self.board[3] \
+            + "," + self.board[4] + "," + self.board[5] \
+            + "," + "\n" + self.board[6] + "," + self.board[7] \
+            + "," + self.board[8] + "," + "\n ]"
+        value = [self.username, self.currentPlayer, lista, self.winner]
+        return value
+
+    def playerinput(self):
+        """"
+        Gathers user input
+        Checks if input is valid to open spot or not
+        """""
+        inp = int(input("Select a spot 1-9: "))
+        if self.board[inp - 1] == "-":
+            self.board[inp-1] = self.currentPlayer
+        else:
+            prRed("Oops player is already at that spot.")
+            self.playerinput()
+
 
 ```
 
-## Deployment
-🚨**Required** 
-
-### Requirements
-🚨**Required** 
-
-If the user is required to have certain keys and credentials you should include this section with directions on how to get the necessary information.
-ex)
-1. **Google Account:** In order to have this program work, you need a google account. If you don't have one  [Create a google account](https://accounts.google.com/Signup)
-2. **Google APIs**
-    1. in a new incognito tab, log into your new google account.
-    1. then update the url to be: https://console.cloud.google.com/getting-started?pli=1 
-        
-        **GOOGLE DRIVE API Access**
-        1.  create a new project for this, call it XXXXXX (You might want to refer to what you see in this video: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/071036790a5642f9a6f004f9888b6a45/ at the bottom of the screen to write out steps.)
-        2. Then click on Add APIs and Services and select Libraries
-        3. Search for Google Drive
-        4. Click Enable
-        5. Click Create Credentials
-        6. Select Google Drive API from the drop down, Application Data, then no and click the Next Button
-        7.  (https://developers.google.com/drive/api/v3/enable-drive-api) 
-        8. for service account details fill in a service account name ex) xxx_API, then click Create and Continue
-        9. For the Accoun acces, select Role: Basic/Editor then continue
-        10. Then Click Done
-        11. Now select the newly created service account
-        12. Click on the KEYS Tab
-        13. Click Add Key
-        14. Select JSON type (right click to show in folder so you know where the file was saved.
-        
-        **GOOGLE SHEETS API Access**
-        You may need to us the back button get to the APIS & SErvices section from where you were.
-        1. click the Libray  Tab and serarch for Google Sheets
-        2. click enable
-
-3. The downloaded credentialsJSON file is basically your creds.json file that you need to put into your heroku settings or gitpod environment to access your google drive.
-
-4. Google Sheet Template
-  - If you had to create specific sheets for your project, instruct users to make their own copy of it from yours and rename it back to what the python project expects
-  - And don't forget to share the spreadsheet in question with the client_email from the creds.json 
-
 ### Gitpod
-🚀 **merit & beyond**
-
-This section should describe the process someone would have to go through to get the local working in gitpod.  Such as install requirements.txt  and setting up a creds.json file that is in the gitignore and keeping their workspace.
-
-If you have project settings required such as a creds.json file from the GOOGLE DRIVE API acess, please provide an example of that file in the writeup with the project key values:
+creds.json file 
 ```$python
 {
   "type": "service_account",
@@ -405,16 +329,21 @@ pip3 install -r requirements.txt
 
 ## Credits
 
-
 -[Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
     - The Template for the GUI for this project was provided by Code Institute. This allows for the Command line to be shown and used within the browser.
+    
+### Tutorials
+
+https://www.youtube.com/watch?v=dK6gJw4-NCo
+
+https://www.youtube.com/watch?v=M3G1ZgOMFxo
+
+https://www.youtube.com/watch?v=E8fmDDtaHLU
 
 ### Content
-🚨**Required** 
 
-[Use bullet points to list out sites you copied text from and cross-reference where those show up on your site](https://www.geeksforgeeks.org/print-colors-python-terminal/)
+(https://www.geeksforgeeks.org/print-colors-python-terminal/)
 
-[https://realpython.com/documenting-python-code/]
 (https://realpython.com/documenting-python-code/)
 
 https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
@@ -422,11 +351,6 @@ https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
 https://www.scraggo.com/python-classes-guess-the-number/
 
 https://www.geeksforgeeks.org/print-colors-python-terminal/
-
-### Media
-🚨**Required** 
-
-Make a list of sites you used images from. If you used several sites try to match up each image to the correct site. This includes attribution for icons if they came from font awesome or other sites, give them credit.
 
 ### Acknowledgments
 
