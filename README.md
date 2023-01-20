@@ -226,41 +226,21 @@ Use this section to itemize the features of your project.
 - **game.computer()** Computer randomly selects your position on the board.
 - **game.checkifwin()** Places the computer's tags according to the index provided. If the index is an empty square, return True and make the move. If the index is occupied, return False and invalidate the move.
 
-
-
-
-In this section write our your data model(s) or classes. 
-
-You might want to include subsections that include how the data in the model is initialized and then the methods that you created to update it through the program.
-
-
-You can create a table and take a screenshot, or you can write up subsections in markdown:
-
-![image](https://user-images.githubusercontent.com/23039742/130148204-b56406bf-0fff-48f3-9dee-2f3cdbe67cc5.png)
-
 ### Class X
-To better group the game as an object, I wrote a class representing its properties and had method functions to update those properties: 
+- **class TicTacToeGame()** Used to determine the python class.
 
-**Properties**
-- property 1: is a {string} it represents {something} 
-- property 2: is a {string} it represents {something} 
+**Python Libraries**
+- Random: used to randomize the computer's moves.
+- Colorama: used to color the game throughout.
 
-**Methods**
-- **\_\_init\_\_**: Initialize method, it starts the class off with default parameters as if a user just started to play a game.
-- **\_\_str\_\_**: Returns a string representation of the class/object
-
-## Libraries used
-🚀 **merit & beyond**
-
-List out the python libraries you purposefully used in your project and why. You can look at your requirements.txt file and go back to https://pypi.org/ to rediscover the purpose of a library if needed.
-
-A bulleted list is a good presentation for this information.
 
 ## Testing
-🚨**Required** 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your features and ensure that they all work as intended in an easy and straightforward way for the users to achieve their goals.
+![Code TicTacToe Game ](https://user-images.githubusercontent.com/79640465/213772339-fcf76435-aa51-470a-9c87-ab779ae7a6cc.png)
 
+![Code TicTacToe](https://user-images.githubusercontent.com/79640465/213772365-5361c014-4701-478b-a291-175716ac6e78.png)
+
+![Code run](https://user-images.githubusercontent.com/79640465/213772396-52bfb2bf-b23b-4901-9194-ad207c3ee4cf.png)
 
 ### Validation Testing
 🚨**Required** 
