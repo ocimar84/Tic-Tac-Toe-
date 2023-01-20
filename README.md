@@ -55,12 +55,6 @@ https://user-images.githubusercontent.com/79640465/213295225-8ea841c3-7e41-4d6f-
 
 Ocimar Felipe Costa
 
-## Table of Contents
-🚀 **merit & beyond**
-
-Generate after readme is complete by copying and pasting your readme from this point & below into this tool:
-- [mardown table of contents generator](https://ecotrust-canada.github.io/markdown-toc/)
-**NOTE:** It does have some bugs if you have dashes or trailing spaces in your headers
 
 ## How To Play/Use
 
