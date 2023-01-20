@@ -262,39 +262,21 @@ There is a space before the # and after it to skip the quality assurance for tha
 Note any errors or warnings you are ignoring and why.
 
 ### Manual Testing
-🚨**Required** 
 
-Use Markdown to track how you tested each bit of user input for each valid option, various invalid entries and leading/trailing spaces
 
-**Feature 1**
-- [ ] invalid entry, says sorry and re-prompts
-- [ ] no entry, says sorry and re-prompts
-- [ ] alpha when numeric expected, sorry and re-prompts
-- [ ] valid entry with leading spaces, trimmed and shows proper next stage
-- [ ] valid entry with trailing spaces, trimmed and shows proper next stage
+### Manual Testing
 
-You should also call out how you tested any other features such as:
-- Welcome Message, recaps username
-- Score update shows current score
-- color change for correct vs incorrect
-- google sheet updated properly
-
-If you prefer spreadsheets, create a google-sheet and link to it in this section, just make sure you update the permissions to allow anyone to view it. You can make a [COPY of this example](https://docs.google.com/spreadsheets/d/1w_JUmFfzHVtXdHse6ib82BGnRMPlPqufSOnAVN3bVl8/edit?usp=sharing) and update it as your own. Just make sure you share it to anyone with the link:
-https://docs.google.com/spreadsheets/d/1w_JUmFfzHVtXdHse6ib82BGnRMPlPqufSOnAVN3bVl8/edit?usp=sharing
+- You will find my manual testing sheet [here](https://docs.google.com/spreadsheets/d/123dAl30RBw5Sq-1GjS7DWu6I563MDM4ZSPRLnatv-ss/edit#gid=0)
 
 ### Defect Tracking
-🚨**Required** 
 
-Try to create issues in real time as it better reflects the daily life of a developer.
+- You will find my defect tracking sheet [here](https://docs.google.com/spreadsheets/d/1xYKKoZuA54QKtIxZ2fA6-BUdHOFavs1R6JX9CK3YZQM/edit?usp=sharing).
 
-The easiest way to track defects is by using GITHUB's Issues to track these as it's really easy to copy/paste screenshots in and then write up how you closed them. At this stage you don't need a custom template or labels, that comes in P4.
+### Defect Tracking
 
- Here's a [guide to GitHub Defects](Defects.md)
+![Defects](https://user-images.githubusercontent.com/79640465/213796712-c17f19b7-83b2-457e-9349-a3b7cbd3bab7.png)
 
-### Defects of Note
-🚀 **merit & beyond**
 
-Some defects are more pesky than others. Highlight 3-5 of the bugs that drove you the most nuts and link to them directly here.
 
 
 ### Outstanding Defects
@@ -381,16 +363,16 @@ This section should describe the process someone would have to go through to get
 If you have project settings required such as a creds.json file from the GOOGLE DRIVE API acess, please provide an example of that file in the writeup with the project key values:
 ```$python
 {
-    "type": "service_account",
-    "project_id": "<YOUR_VALUE>",
-    "private_key_id": "<YOUR_VALUE>",
-    "private_key": "<YOUR_VALUE>",
-    "client_email": "<YOUR_VALUE>",
-    "client_id": "<YOUR_VALUE>",
-    "auth_uri": "https://accoutns.google.com/0/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cer_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "clien_x509_cert_url": "<YOUR_VALUE>"
+  "type": "service_account",
+  "project_id": "ocimartictactoe",
+  "private_key_id": "b6869f37eb1a62a2896caee1903d1c4286b84dea",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC1OJYZeSXJ8Pdk\nfnYW5W+1+uBurbXQMf6Rw8zJ8y7W86MKBAO4BmChCX1xOi9ZbyQO4zGu1LjkRfDj\n3ggxuoknyEPU5vutgaUiK3Yi2NJSLEc/q2nRsvaDyOLxkrmOV802XUGfZpx03JpD\n9Hqu3z0IZggEi+ujv97ncTa5/Ik30+TZL288tlwuzWuf4n2HhZtNCNGLaa2hTJL0\ndoyidKqyAV/YiyxaW+nRj7ynW44XSK7H1QncnpegL4stWlTVUkLhZLSsnS38jBFN\n14J5+4P/WZVEAG06KT3bS1cFs/QFeXe/7bCS28t+/musrrMnmOiLyPnBVV//yQqd\nW0+3qScZAgMBAAECggEAEYbN1YbcUGySsKXJFqvNTboGwg2LhlLffl+DyzWkHmaP\n1SR665hfo2jUjgKE7nm2Rg5TvByXXn8j2MCc5ZpXMNbIi1W6ROyYo6EKcD0CElp1\nRZjMHNuEcKMZd9MAnoiqsIr9EW/jdStEwYpqjHEgvlLdNvtaqIqiV0X2zK66OADc\nxMsLOufvPAR5HUt/Jrc+GqDahBQ7x6ycbfivU8bVcS0CjjMry5YY2e0UUVXlVAgS\nooNnkoKm/5+ZReZ3SptJ9XUXjNHCa8Aw5zMvYc/R1zD9ZiazlkH4YinUR0txaIqW\n2ijOKWop/WogLT8SKjPrOD2kPBxcwbVfmBia+rq/lQKBgQDt0q0BY0mk7oGggZFY\nFNxO+SDS7pJx1BDlEQtmrBMV+85MmlKZaQ1EEfOaj0Em0oIvSdJK+NY3Hvt2kWPK\nA2nCFxcaQKhop+an+b1hSTWCY7aox5C4Usmst69K01vp7eXh71wkFJjvMiIFc310\nZ/0EO4t1pjw5lVFYIliKpC4zowKBgQDDEmscMqokXwRhS3KHtMakNNJd+WVa9Xw+\nbl26HkCS+X8cpS8cEtkY6RelmRWENCVRfgJWm78NrqvFcJUI+rRrKlVDbVEeIDWy\nDbokOEcXM8aanI4d52Cy6ZolHJzA3f6/qwU8wZAz8sLxl2WWGWQEPcm90Yn2XQaz\n+Cs1tTyGEwKBgQCjFznbXMpxF7q/ZntU6yFV6xSucjrtYp+fZvvpkhGYntEPyTjh\nyZ/2UVU8Zgco522tnjNfhJvquw15dyT2sTaCirEmKLcU5ieQg/xyTfErFNR7lDfT\nn7p7/o9wgddjaeie8zW97H4gcsHP+S5MeM+Tan4t1S0x1AsvpIYRtZuVfwKBgQCU\nTUxhA6OWQyZxUYqg4S6jaAUGrLQBkuACFqXq+VTeaA/bFznZffrOlWcE3n0dJQe6\nDLJ6Za26GTE9yXmEehTv5B8uQ82HubUYyJbbMm3ZleNHZ/4jfeRmIHKwBDCn8B3c\nWYiByCZ5V/Yc9ZyloGgJUXAufz8DrXWLHQC8tCxvQQKBgQDA+5fXk4DHWNl5b1DI\nApTGN1+JBbf3q/UtYn9pyJvSbSYbChIvSToAIz/2rJ8L27A1TPhVCY2Mrwjdlwzu\n8ia1pN4Sq1oCPxVBcwl//s5YyHzZtZbAIoQwZBff1SAZmqw9bitncJ9maazw3PoZ\nswguIH/g+OpM3DDUz+MVQbFPxA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ocimartictactoe@ocimartictactoe.iam.gserviceaccount.com",
+  "client_id": "109103238029005579935",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ocimartictactoe%40ocimartictactoe.iam.gserviceaccount.com"
 }
 ```
 
