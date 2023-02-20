@@ -22,10 +22,17 @@ def printBoard(board):
 # take player input
 def playerInput(board):
     inp = int(input("Select a spot 1-9: "))
-    if board[inp-1] == "-":
+    if inp.isnumeric() and inp <= 9 and inp > 0 and board[inp-1] == "-":
+
         board[inp-1] = currentPlayer
     else:
-        print("Oops player is already at that spot.")
+        if not inp.isnumeric():
+            print("Please put number between 0 and 9")
+        elif inp > 9 and inp <= 0:
+            print("Please put number between 0 and 9")
+        else:
+            print("Oops player is already at that spot.")
+
 
 
 # check for win or tie
