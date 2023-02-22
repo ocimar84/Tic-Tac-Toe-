@@ -65,11 +65,22 @@ class TicTacToeGame():
         Gathers user input
         Checks if input is valid to open spot or not
         """""
-        inp = int(input("Select a spot 1-9: "))
-        if self.board[inp - 1] == "-":
-            self.board[inp-1] = self.currentPlayer
-        else:
-            prRed("Oops player is already at that spot.")
+        try:
+            inp = int(input("Select a spot 1-9: "))
+            if inp > 9 or inp < 1:
+                # catch if user enters something not valid
+                prRed("You need to enter a number between 1 and 9")
+                self.playerinput()
+            elif self.board[inp - 1] == "-":
+                # space is available
+                self.board[inp-1] = self.currentPlayer
+            else:
+                # user entered something that is already occupied
+                prRed("Oops player is already at that spot.")
+                self.playerinput()
+        except ValueError:
+            # catch if user enters a string
+            prRed("You need to enter a number between 1 and 9")
             self.playerinput()
 
     def checkhorizontle(self):
