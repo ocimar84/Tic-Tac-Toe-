@@ -94,11 +94,15 @@ Use this section to itemize the features of your project.
 
 ![Tictactoe](https://user-images.githubusercontent.com/79640465/213566994-d8eb30f1-3c0c-45be-aab9-b66517248923.png)
 
-5 - End the game notifies who was the winner, and it shows that the result is being sent to google cloud spreadsheet.
+5 - If the user enters a number other than 1 to 9, he receives a message saying that it is not possible.
+
+![number error](https://user-images.githubusercontent.com/79640465/220748815-46c1b2ec-a7a4-4494-bc9b-868b5ce80922.png)
+
+6 - End the game notifies who was the winner, and it shows that the result is being sent to google cloud spreadsheet.
 
 ![winner](https://user-images.githubusercontent.com/79640465/213567172-1ed10f82-cd6f-4e66-8902-87abda532f4f.png)
 
-6 - Ask if you want to play one more time.
+7 - Ask if you want to play one more time.
 
         1 - Yes / 2 - No
 
